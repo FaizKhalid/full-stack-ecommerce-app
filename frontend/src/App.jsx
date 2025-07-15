@@ -1,12 +1,14 @@
-import "./App.css";
-
+import { Route, Routes } from "react-router-dom";
+import Userlayout from "./components/layouts/Userlayout";
+import { Home } from "../pages";
 function App() {
   return (
-    <>
-      <div>
-        <h2>Ecommerce App</h2>
-      </div>
-    </>
+    <Routes>
+      <Route path={"/"} element={<Userlayout />}>
+        <Route index element={<Home />} />
+      </Route>
+      <Route>{/*Admin Layout*/}</Route>
+    </Routes>
   );
 }
 
