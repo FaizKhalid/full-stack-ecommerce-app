@@ -6,7 +6,8 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="border-t py-12">
+    <footer>
+      <div className="border-t border-gray-400 py-3 mx-4 mt-2"></div>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 px-2 lg:px-4 gap-7">
         <div>
           <h3 className="text-md text-gray-800 mb-4 font-semibold">
@@ -84,6 +85,10 @@ function Footer() {
           <h4 className="text-sm text-gray-500 mt-3">Call Us</h4>
           <h4 className="text-sm text-black mt-1">+9223122893813</h4>
         </div>
+      </div>
+      <div className="border-t border-gray-300 mx-4 mt-2"></div>
+      <div className="text-gray-500 text-sm text-center font-light capitalize p-3">
+        copyright @ 2026
       </div>
     </footer>
   );

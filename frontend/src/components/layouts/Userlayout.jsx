@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Header, Footer } from "../../components";
+import { Outlet } from "react-router-dom";
 
 function Userlayout() {
   return (
@@ -7,7 +8,9 @@ function Userlayout() {
       {/* Header */}
       <Header />
       {/* Main Content */}
-      <div className="w-full h-full bg-amber-200">Main Content</div>
+      <main>
+        <Outlet />
+      </main>
       {/* Footer */}
       <Footer />
     </>
